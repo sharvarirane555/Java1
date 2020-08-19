@@ -8,7 +8,11 @@ System.out.println("I am 22 years old.");
 System.out.println("I am the master branch.");
 =======
 System.out.println("I am practising git branching.");
+<<<<<<< HEAD
 System.out.println("I like git alot.");
+=======
+System.out.println("I like git.");
+>>>>>>> master
 >>>>>>> testing
 >>>>>>> dc90f8a0ccc7a0cfaebc2d5bf86cc2089cc60ad6
 }
