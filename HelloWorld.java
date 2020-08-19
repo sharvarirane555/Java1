@@ -4,7 +4,7 @@ public static void main(String args[]){
 System.out.println("Hi, my name is Sharvari and I am amazing.");
 =======
 System.out.println("I am 22 years old.");
-System.out.println("I like git.");
+System.out.println("I am the master branch.");
 >>>>>>> dc90f8a0ccc7a0cfaebc2d5bf86cc2089cc60ad6
 }
 }
