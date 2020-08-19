@@ -6,5 +6,6 @@ System.out.println("I am the master branch.");
 System.out.println("I am practising git branching.");
 System.out.println("I like git.");
 System.out.println("I like git alot.");
+System.out.println("Git is the best.");
 }
 }
