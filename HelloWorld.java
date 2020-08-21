@@ -7,6 +7,6 @@ System.out.println("I like git.");
 System.out.println("I like git alot.");
 System.out.println("Git is the best.");
 System.out.println("Git is a version control system.");
-System.out.println("Hey");
+System.out.println("Hey/nHi");
 }
 }
