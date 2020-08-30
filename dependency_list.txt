@@ -1,0 +1,14 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------------< com.combo:qwerty >--------------------------
+[INFO] Building qwerty v1.1
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ qwerty ---
+[INFO] com.combo:qwerty:jar:v1.1
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.335 s
+[INFO] Finished at: 2020-08-30T16:29:40+05:30
+[INFO] ------------------------------------------------------------------------

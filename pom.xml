@@ -3,6 +3,19 @@
   <groupId>com.combo</groupId>
   <artifactId>qwerty</artifactId>
   <version>v1.1</version>
+  <dependencies>
+    <dependency>
+		<groupId>org.apache.commons</groupId>
+		<artifactId>commons-lang3</artifactId>
+		<version>3.11</version>
+	</dependency>
+	<dependency>
+		<groupId>junit</groupId>
+    	<artifactId>junit</artifactId>
+    	<version>4.12</version>
+		<scope>test</scope>
+	</dependency>
+  </dependencies>
   <build>
     <plugins>
         <plugin>
@@ -15,5 +28,4 @@
         </plugin>
     </plugins>
 </build>
-
 </project>
