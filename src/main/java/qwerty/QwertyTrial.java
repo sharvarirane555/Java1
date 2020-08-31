@@ -8,7 +8,7 @@ public class QwertyTrial {
 		String inp = sc.nextLine();
 	//	String[] sepWords = StringUtils.split(inp, ' ');
 		System.out.println("This is a Maven project.\nIt will be build through Jenkins.\nIt will be uploaded on Nexus Repository.");
-		System.out.println("Helllllooooo");
+		System.out.println("Helllllooooo123123123");
 	//	System.out.println(sepWords.length);
 		}
 }
