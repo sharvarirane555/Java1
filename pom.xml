@@ -10,7 +10,7 @@
   </snapshotRepository>
   <repository>
 	<id>nexusDeploymentRepo</id>
-	<url>http://localhost:8081/repository/maven-releases/</url>
+	<url>http://localhost:8081/repository/maven123/</url>
   </repository>
   </distributionManagement>
   <dependencies>
