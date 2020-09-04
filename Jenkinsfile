@@ -4,7 +4,7 @@ node {
    git 'https://github.com/sharvarirane555/Java1'
         }
         stage('Compile-Package'){
-	sh "${mvnHome}/bin/mvn package"
+	sh "${mvnHome}\bin\mvn package"
         }  
 }
 
