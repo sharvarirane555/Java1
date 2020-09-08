@@ -1,7 +1,7 @@
 pipeline {
 	agent any
+	def mvnTool = tool 'Maven1'
 	stages {
-		def mvnTool = tool 'Maven1'
 		stage ("Compile"){
 			steps {
 				withMaven(maven : 'Maven1') {
