@@ -20,7 +20,15 @@ pipeline {
 		stage ("Install"){
 			steps {
 				withMaven(maven : 'Maven2') {
-					sh "mvn install" 
+					bat "mvn install" 
+				}
+			}
+		}
+		
+		stage ("Deploy"){
+			steps {
+				withMaven(maven : 'Maven2') {
+					bat "mvn deploy" 
 				}
 			}
 		}
