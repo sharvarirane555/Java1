@@ -3,25 +3,19 @@ pipeline {
 	stages {
 		stage ("Compile"){
 			steps {
-				withMaven(maven : 'Maven1') {
-					bat 'mvn clean compile'
-				}
+				echo "Compile"
 			}
 		}
 		
 		stage ("Test"){
 			steps {
-				withMaven(maven : 'Maven1') {
-					bat 'mvn test'
-				}
+				echo "Test"
 			}
 		}
 		
 		stage ("Install"){
 			steps {
-				withMaven(maven : 'Maven1') {
-					bat 'mvn install'
-				}
+				echo "Install"
 			}
 		}
 	}
