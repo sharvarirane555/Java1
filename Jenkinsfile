@@ -1,12 +1,28 @@
-node {
-        stage('SCM Checkout'){
-                git 'https://github.com/sharvarirane555/Java1'
-        }
-        stage('Compile-Package'){
-		def mvn_version = 'Maven1'
-                withEnv( ["PATH+MAVEN=${tool mvn_version}/bin"] ) {
-                        sh "mvn clean package"
-                }
-        }  
+pipeline {
+	agent any
+	stages {
+		stage ("Compile"){
+			steps {
+				withMaven(maven : 'Maven1') {
+					sh 'mvn clean compile'
+				}
+			}
+		}
+		
+		stage ("Test"){
+			steps {
+				withMaven(maven : 'Maven1') {
+					sh 'mvn test'
+				}
+			}
+		}
+		
+		stage ("Install"){
+			steps {
+				withMaven(maven : 'Maven1') {
+					sh 'mvn install'
+				}
+			}
+		}
+	}
 }
-
