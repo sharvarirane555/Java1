@@ -24,13 +24,5 @@ pipeline {
 				}
 			}
 		}
-		
-		stage ("Deploy"){
-			steps {
-				withMaven(maven : 'Maven2') {
-					bat "mvn deploy" 
-				}
-			}
-		}
 	}
 }
