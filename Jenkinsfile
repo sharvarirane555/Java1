@@ -1,21 +1,28 @@
 pipeline {
 	agent any
 	stages {
+		def mvnTool = tool 'Maven1'
 		stage ("Compile"){
 			steps {
-				echo "Compile"
+				withMaven(maven : 'Maven1') {
+					sh "${mvnTool}/bin/mvn clean compile" 
+				}
 			}
 		}
 		
 		stage ("Test"){
 			steps {
-				echo "Test"
+				withMaven(maven : 'Maven1') {
+					sh "${mvnTool}/bin/mvn test" 
+				}
 			}
 		}
 		
 		stage ("Install"){
 			steps {
-				echo "Install"
+				withMaven(maven : 'Maven1') {
+					sh "${mvnTool}/bin/mvn install" 
+				}
 			}
 		}
 	}
